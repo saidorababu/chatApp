@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* -ms-overflow-style:none; */
+}
+*::-webkit-scrollbar{
+    display: none;
+} 
+.chat-page{
+    background-color: rgb(9, 3, 33);
+    background-image: url("https://coverlab.org/wp-content/uploads/revslider/slider_9/video-bg-1024x576.jpg");
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+    /* background-image:url("https://wallpapercave.com/wp/wp9116447.jpg"); */
+    background-size: cover;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.chat-heading{
+    align-self: center;
+    color:white;
+    font-size: 28px;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-self: center;
+}
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    height:380px;
+    padding: 10px;
+    /* background-image: url("https://wallpapercave.com/wp/wp9116447.jpg"); */
+    background-size: cover;
+    background-blend-mode: soft-light;
+    position: relative;
+}
+.chat-page .chat-container .message-container{
+    height:100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#right.messageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+#left.messageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px 20px;
+}
+
+ #right .message{
+    padding:10px 15px;
+    margin: 0px 10px;
+    background-color: rgb(206, 151, 206);
+    color: rgb(19, 1, 19);
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 5px 0px 5px;
+}
+#left .message{
+    padding:10px 15px;
+    margin: 0px 10px;
+    background-color: rgb(114, 238, 176);
+    color: rgb(12, 1, 12);
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 5px 0px 5px;
+}
+.send-container{
+    margin: 0px;
+    margin: 0px 0px 30px 0px;
+}
+.sendForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.message-input{
+    width: 80%;
+    background-color: rgb(236, 237, 243);
+    color: rgb(2, 2, 22);
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    font-weight: 700;
+    border: solid 0px red;
+    padding: 6px 10px;
+}
+.message-input:focus{
+    width: 80%;
+    background-color: rgb(237, 238, 244);
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    font-weight: 600;
+    padding: 6px 10px;
+}
+.message-input:hover{
+    width: 80%;
+    background-color: rgb(236, 237, 244);
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    border: solid 2px rgb(3, 1, 24);
+    font-weight: 600;
+    padding: 6px 10px;
+}
+.message-box{
+    display: flex;
+    flex-direction: column;
+}
+.message-meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    color:white;
+    font-weight: 600;
+    justify-content: space-between;
+    padding: 3px 0px 3px 6px ;
+    margin:0px 0px;
+}
+
+.send-button{
+    background-color: rgb(207, 226, 239);
+    width: 7%;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+    border: solid 0px rgb(18, 3, 42);
+    cursor: pointer;
+}
+.send-button:hover{
+    background-color: rgb(207, 226, 239);
+    width: 7%;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+    border: solid 1px rgb(11, 8, 52);
+}

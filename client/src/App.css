@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border:2px solid rgb(75, 11, 75);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.main-heading{
+    text-align: center;
+    color: rgb(29, 217, 26);
+    font-weight: 600;
+    align-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.input{
+    border-radius: 8px;
+    margin: 10px 0px;
+    padding: 8px;
+    outline:none;
+    border: 1px solid rgb(29, 5, 5);
+}
+.input:focus{
+    border-radius: 8px;
+    border:2px solid rgb(65, 5, 65)
+}
+.input:hover{
+    border-radius: 8px;
+    border:2px solid rgb(65, 5, 65)
+}
+.join-button{
+    align-self: center;
+    padding: 10px 14px;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 0px solid white;
+}
+.join-button:hover{
+    align-self: center;
+    padding: 10px 14px;
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
